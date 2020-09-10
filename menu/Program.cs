@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace menu
 {
@@ -14,6 +14,11 @@ namespace menu
             Console.WriteLine("0. Exit");
             Console.WriteLine("Enter your choice: ");
             choice = Int32.Parse(Console.ReadLine());
+            menu(choice);
+        }
+
+        private static void menu(int choice)
+        {
             switch (choice)
             {
                 case 1:
@@ -53,5 +58,7 @@ namespace menu
 
             }
         }
+
     }
-}
+    }
+
